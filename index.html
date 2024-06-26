@@ -3,37 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Сучасна пекарня</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav>
+      <nav class="navigation">
         <!-- Logo -->
-        <a href="#"
+        <a href="/"
           ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
         /></a>
         <!-- Website navigation -->
-        <ul>
-          <li><a href="#traditions">Наші традиції</a></li>
-          <li><a href="#chefs">Шеф-кухарі</a></li>
-          <li><a href="#formats">Формати</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+        <ul class="navigation__list">
+          <li>
+            <a class="navigation__item" href="#traditions">Наші традиції</a>
+          </li>
+          <li><a class="navigation__item" href="#chefs">Шеф-кухарі</a></li>
+          <li><a class="navigation__item" href="#formats">Формати</a></li>
+          <li><a class="navigation__item" href="#contacts">Контакти</a></li>
         </ul>
         <!-- Callback button -->
-        <button type="button">Замовити дзвінок</button>
+        <button class="callback-button" type="button">Замовити дзвінок</button>
       </nav>
     </header>
     <!-- Main -->
     <main>
       <!--Modern bakery section -->
       <section>
-        <h1><span>Сучасна</span> пекарня</h1>
+        <h1><span class="text-accent">Сучасна</span> пекарня</h1>
       </section>
       <!-- New traditional format section -->
-      <section id="traditions">
+      <section id="traditions" class="traditions-section">
         <!-- List of benefits -->
-        <ul>
+        <ul class="traditions-section__benefits-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
@@ -41,13 +44,14 @@
         <!-- Main content -->
         <h2>Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
+          <span class="text-accent">shop bakery</span> — це пекарня, яка взяла
+          все найкраще, і зберегла смак традиційної випічки та натуральність
+          інгредієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі —
-          <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
+          <span class="text-accent">5 хвилин і замовлення готове.</span> А ще у
+          наших пекарень стильний дизайн та висока якість обслуговування!
         </p>
         <img
           src="./img/baker.jpg"
@@ -56,7 +60,7 @@
       </section>
       <!-- Our best chefs section -->
       <section id="chefs">
-        <h2>Наші найкращі <span>шеф -кухарі</span></h2>
+        <h2>Наші найкращі <span class="text-accent">шеф -кухарі</span></h2>
         <ul>
           <!-- First chef -->
           <li>
@@ -90,7 +94,7 @@
           <!-- Walrus option -->
           <li>
             <article>
-              <h3 lang="en">Walrus</h3>
+              <h4 lang="en">Walrus</h4>
               <ul>
                 <li>Площа: до 120 м2</li>
                 <li>Меню: розширене меню</li>
@@ -105,7 +109,7 @@
           <!-- Horseshoe option -->
           <li>
             <article>
-              <h3 lang="en">Horseshoe</h3>
+              <h4 lang="en">Horseshoe</h4>
               <ul>
                 <li>Площа: до 25 м2</li>
                 <li>Меню: найпопулярніші позиції меню</li>
@@ -117,7 +121,7 @@
           <!-- Handlebar option -->
           <li>
             <article>
-              <h3 lang="en">Handlebar</h3>
+              <h4 lang="en">Handlebar</h4>
               <ul>
                 <li>Площа: до 15 м2</li>
                 <li>Меню: найпопулярніші позиції меню</li>
@@ -133,7 +137,9 @@
         <!-- Main content -->
         <h2>Приєднуйся до мережі пекарень</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-        <button type="submit">Замовити дзвінок</button>
+
+        <!-- Callback button -->
+        <button class="callback-button" type="button">Замовити дзвінок</button>
         <p>
           Натискаючи на кнопку я погоджуюсь з
           <a href="#">політикою конфіденційності</a>
@@ -151,17 +157,19 @@
     </main>
     <!-- Footer -->
     <footer>
-      <nav>
+      <nav class="navigation">
         <!-- Logo -->
         <a href="#"
           ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
         /></a>
         <!-- Website navigation -->
-        <ul>
-          <li><a href="#traditions">Наші традиції</a></li>
-          <li><a href="#chefs">Шеф-кухарі</a></li>
-          <li><a href="#formats">Формати</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+        <ul class="navigation__list">
+          <li>
+            <a class="navigation__item" href="#traditions">Наші традиції</a>
+          </li>
+          <li><a class="navigation__item" href="#chefs">Шеф-кухарі</a></li>
+          <li><a class="navigation__item" href="#formats">Формати</a></li>
+          <li><a class="navigation__item" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
       <!-- Address informaion -->

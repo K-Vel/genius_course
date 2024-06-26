@@ -1,0 +1,121 @@
+/* Declaration Order */
+.declaration-order {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+
+    /* Typography */
+    font: normal 14px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+
+    /* Visual */
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    /* Misc */
+    opacity: 1;
+}
+
+/* Variables */
+:root {
+    --primary-dark: #31261A;
+    --primary-light: #FAF4EA;
+    --accent-color: #819B57;
+    --accent-color-dark: #465929;
+}
+
+/* Global styles */
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 128px;
+    font-weight: 900;
+    line-height: 192px;
+    color: var(--primary-light);
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 84px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+/* Content */
+/* Blocks and elements */
+/* Button */
+.callback-button {
+    font-size: 18px;
+    color: var(--primary-light);
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.callback-button:hover {
+    color: var(--accent-color-dark);
+    background-color: transparent;
+}
+
+/* Navigation */
+.navigation__item {
+    font-size: 18px;
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.navigation__item:hover {
+    color: var(--accent-color);
+}
+
+/* Traditions section */
+.traditions-section__benefits-list {
+    font-size: 20px;
+    color: var(--primary-light);
+    background-color: var(--accent-color);
+}
+
+
+/* Modificators */
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* Mixes */
