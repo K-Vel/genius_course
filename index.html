@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Сучасна пекарня</title>
   </head>
@@ -29,7 +30,7 @@
     </header>
     <!-- Main -->
     <main>
-      <!--Modern bakery section -->
+      <!-- Modern bakery section -->
       <section>
         <h1><span class="text-accent">Сучасна</span> пекарня</h1>
       </section>
@@ -44,9 +45,9 @@
         <!-- Main content -->
         <h2>Новий формат традицій</h2>
         <p>
-          <span class="text-accent">shop bakery</span> — це пекарня, яка взяла
-          все найкраще, і зберегла смак традиційної випічки та натуральність
-          інгредієнтів.
+          <span class="text-accent text-uppercase">shop bakery</span> — це
+          пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки
+          та натуральність інгредієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі —
@@ -60,29 +61,29 @@
       </section>
       <!-- Our best chefs section -->
       <section id="chefs">
-        <h2>Наші найкращі <span class="text-accent">шеф -кухарі</span></h2>
+        <h2>Наші найкращі <span class="text-accent">шеф-кухарі</span></h2>
         <ul>
           <!-- First chef -->
           <li>
             <article>
-              <img src="./img/nastya.jpg" alt="Настя" />
+              <img src="./img/nastya.jpg" alt="Шеф-кухар Настя" />
               <h3>Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-              <p>Я випічу для вас найсмачніщі вироби!</p>
+              <p>Я випічу для вас найсмачніші вироби!</p>
             </article>
           </li>
           <!-- Second chef -->
           <li>
             <article>
-              <img src="./img/vlad.jpg" alt="Влад" />
+              <img src="./img/vlad.jpg" alt="Шеф-кухар Влад" />
               <h3>Влад</h3>
               <p>Привіт, я Влад!</p>
               <p>
-                Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
+                Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов,
                 з якою ми ділимось кожен раз з Вами через нашу випічку!
               </p>
-              <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              <p>Я зроблю для вас унікальну начинку на будь-який смак!</p>
             </article>
           </li>
         </ul>
@@ -93,41 +94,41 @@
         <ul>
           <!-- Walrus option -->
           <li>
-            <article>
+            <article class="format">
               <h4 lang="en">Walrus</h4>
-              <ul>
-                <li>Площа: до 120 м2</li>
-                <li>Меню: розширене меню</li>
-                <li>
+              <div class="format__descripton">
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
                   Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
                   офіціанти-різнороби
-                </li>
-                <li>Посадкові місця: є</li>
-              </ul>
+                </p>
+                <p>Посадкові місця: є</p>
+              </div>
             </article>
           </li>
           <!-- Horseshoe option -->
           <li>
-            <article>
+            <article class="format">
               <h4 lang="en">Horseshoe</h4>
-              <ul>
-                <li>Площа: до 25 м2</li>
-                <li>Меню: найпопулярніші позиції меню</li>
-                <li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
-                <li>Посадкові місця: відсутні</li>
-              </ul>
+              <div class="format__descripton">
+                <p>Площа: до 25 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
           <!-- Handlebar option -->
           <li>
-            <article>
+            <article class="format">
               <h4 lang="en">Handlebar</h4>
-              <ul>
-                <li>Площа: до 15 м2</li>
-                <li>Меню: найпопулярніші позиції меню</li>
-                <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-                <li>Посадкові місця: відсутні</li>
-              </ul>
+              <div class="format__descripton">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -137,7 +138,6 @@
         <!-- Main content -->
         <h2>Приєднуйся до мережі пекарень</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-
         <!-- Callback button -->
         <button class="callback-button" type="button">Замовити дзвінок</button>
         <p>
@@ -172,15 +172,24 @@
           <li><a class="navigation__item" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
-      <!-- Address informaion -->
-      <address>
-        <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+      <!-- Address information -->
+      <address class="address">
+        <ul class="address__list">
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="address__item" href="tel:+380960000007"
+              >+38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/c7Bgi1azpxMAwuxh7" target="_blank"
+            <a class="address__item" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="address__item"
+              href="https://maps.app.goo.gl/c7Bgi1azpxMAwuxh7"
+              target="_blank"
               >Україна, м. Київ, вул. Січових Стрільців 54</a
             >
           </li>
@@ -191,8 +200,10 @@
             <a href="#"></a>
           </li>
         </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
+        <a class="address__item" href="#" target="_blank"
+          >Політика конфіденційності</a
+        >
+        <p class="copyright-style">&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
