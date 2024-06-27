@@ -34,6 +34,7 @@
 }
 
 /* Fonts */
+
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
@@ -73,6 +74,12 @@
 
 /* Global styles */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     font-family: "Poppins", 'Helvetica', sans-serif;
@@ -80,6 +87,7 @@ body {
     font-weight: 400px;
     line-height: 1.5;
     color: var(--primary-dark);
+    background-color: var(--primary-light);
 }
 
 ul {
@@ -108,66 +116,24 @@ h3 {
     font-weight: 600;
 }
 
-
 h4 {
     font-size: 24px;
     font-weight: 600;
 }
 
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 /* Content */
-
-/* Blocks and elements */
-/* Navigation */
-.navigation__item {
-    color: var(--primary-light);
-    text-decoration: none;
+/* Mixes */
+.section {
+    padding: 48px 0;
 }
 
-.navigation__item:hover {
-    font-weight: 600;
-    color: var(--accent-color);
-}
-
-/* Callback Button */
-.callback-button {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--primary-light);
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.callback-button:hover {
-    color: var(--accent-color-dark);
-    background-color: transparent;
-}
-
-/* Traditions section */
-.traditions-section__benefits-list {
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--primary-light);
-    background-color: var(--accent-color);
-}
-
-/* Formats section */
-.format__descripton {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.address__item {
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--primary-light);
-    text-decoration: none;
-}
-
-.address__item:hover {
-    color: var(--accent-color);
-}
 
 /* Modificators */
 .text-accent {
@@ -184,4 +150,111 @@ h4 {
     color: #A18268;
 }
 
-/* Mixes */
+.visually-hidden {
+    position: absolute;
+    left: 10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+/* Blocks and elements */
+/* Navigation */
+.navigation__item {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.navigation__item:hover {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+
+/* Callback Button */
+.callback-button {
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-light);
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.callback-button:hover {
+    color: var(--accent-color-dark);
+    background-color: transparent;
+}
+
+
+/* Modern bakery section  */
+.modern-bakery-section {
+    padding: 272px 0px;
+}
+
+
+/* Benefits section */
+.benefits-section__list {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--primary-light);
+    background-color: var(--accent-color);
+}
+
+
+/* Traditions section */
+.traditions {
+    padding-top: 96px;
+}
+
+.traditions__title {
+    margin-bottom: 42px;
+}
+
+
+/* Chefs section */
+.chefs__title {
+    margin-bottom: 80px;
+}
+
+.chef__title {
+    margin-bottom: 16px;
+}
+
+
+/* Formats section */
+.formats__title {
+    margin-bottom: 80px;
+}
+
+.format__description {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+/* Contacts section */
+.contacts__title {
+    margin-bottom: 16px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 603px;
+}
+
+/* Footer */
+.address__item {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.address__item:hover {
+    color: var(--accent-color);
+}
