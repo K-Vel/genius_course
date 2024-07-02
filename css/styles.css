@@ -129,38 +129,19 @@ h4 {
 }
 
 /* Content */
-/* Mixes */
-.section {
-    padding: 48px 0;
-}
-
-
-/* Modificators */
-.text-accent {
-    color: var(--accent-color);
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.copyright-style {
-    font-size: 14px;
-    color: #A18268;
-}
-
-.visually-hidden {
-    position: absolute;
-    left: 10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-
 /* Blocks and elements */
+
+header {
+    background-color: #31261A;
+    /* remove */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 /* Navigation */
 .navigation__item {
     color: var(--primary-light);
@@ -168,7 +149,6 @@ h4 {
 }
 
 .navigation__item:hover {
-    font-weight: 600;
     color: var(--accent-color);
 }
 
@@ -192,13 +172,22 @@ h4 {
 
 
 /* Modern bakery section  */
-.modern-bakery-section {
+.modern-bakery {
     padding: 272px 0px;
 }
 
 
 /* Benefits section */
+.benefits {
+    background-color: var(--accent-color);
+    padding: 16px 0;
+}
+
 .benefits__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
     font-size: 20px;
     font-weight: 300;
     color: var(--primary-light);
@@ -209,26 +198,86 @@ h4 {
 /* Traditions section */
 .traditions {
     padding-top: 96px;
+    padding-bottom: 48px;
 }
 
-.traditions__title {
+.traditions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.traditions-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    gap: 42px;
+}
+
+.traditions-contents__title {
     margin-bottom: 42px;
+}
+
+.traditions-content__text {
+    max-width: 340px;
 }
 
 
 /* Chefs section */
-.chefs__title {
-    margin-bottom: 80px;
+.chefs {
+    padding: 48px 0;
 }
 
-.chef__title {
-    margin-bottom: 16px;
+.chefs__title {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.chefs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.chef {
+    display: flex;
+    gap: 30px
+}
+
+.chef__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 334px;
+    gap: 16px;
 }
 
 
 /* Formats section */
+.formats {
+    padding: 48px 0;
+}
+
 .formats__title {
     margin-bottom: 80px;
+    text-align: center;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+}
+
+.format {
+    border: 3px solid gray;
+    border-radius: 15px;
+    /* remove */
+    padding: 24px;
+}
+
+.format__title {
+    margin-bottom: 16px;
 }
 
 .format__description {
@@ -238,6 +287,10 @@ h4 {
 
 
 /* Contacts section */
+.contacts {
+    padding: 48px 0;
+}
+
 .contacts__title {
     margin-bottom: 16px;
 }
@@ -248,6 +301,12 @@ iframe {
 }
 
 /* Footer */
+
+footer {
+    background-color: #31261A;
+
+}
+
 .address__item {
     font-size: 16px;
     font-weight: 300;
@@ -257,4 +316,47 @@ iframe {
 
 .address__item:hover {
     color: var(--accent-color);
+}
+
+/* Mixes */
+
+
+/* Modificators */
+.navigation_header {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.list_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 64px;
+}
+
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.copyright-style {
+    font-size: 14px;
+    color: #A18268;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: 10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
