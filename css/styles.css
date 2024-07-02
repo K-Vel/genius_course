@@ -307,6 +307,26 @@ header {
     text-align: center;
 }
 
+.carousel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--primary-dark);
+    cursor: pointer;
+
+    fill: var(--primary-dark);
+}
+
+.carousel-button:hover {
+    background-color: var(--primary-dark);
+
+    fill: var(--primary-light);
+}
+
 .formats__list {
     display: flex;
     gap: 20px;
@@ -371,6 +391,14 @@ footer {
 
 .address__item:hover {
     color: var(--accent-color-light);
+}
+
+.address__icon {
+    fill: var(--primary-light);
+}
+
+.address__icon:hover {
+    fill: var(--accent-color-light);
 }
 
 /* Mixes */
