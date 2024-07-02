@@ -68,8 +68,10 @@
 :root {
     --primary-dark: #31261A;
     --primary-light: #FAF4EA;
-    --accent-color: #819B57;
+    --accent-color-light: #819B57;
     --accent-color-dark: #465929;
+    --decor-light: #CFCFBC;
+    --decor-dark: #A18268;
 }
 
 /* Global styles */
@@ -107,7 +109,6 @@ h1 {
 
 h2 {
     font-size: 64px;
-    font-weight: 900;
     line-height: 1.3;
 }
 
@@ -129,7 +130,7 @@ h4 {
 }
 
 .text-accent {
-    color: var(--accent-color);
+    color: var(--accent-color-light);
 }
 
 .text-uppercase {
@@ -139,7 +140,7 @@ h4 {
 
 .copyright-style {
     font-size: 14px;
-    color: #A18268;
+    color: var(--decor-dark);
 }
 
 .visually-hidden {
@@ -155,7 +156,7 @@ h4 {
 /* Blocks and elements */
 
 header {
-    background-color: #31261A;
+    background-color: var(--primary-dark);
     /* remove */
 }
 
@@ -172,7 +173,7 @@ header {
 }
 
 .navigation__item:hover {
-    color: var(--accent-color);
+    color: var(--accent-color-light);
 }
 
 
@@ -182,8 +183,8 @@ header {
     font-size: 18px;
     font-weight: 600;
     color: var(--primary-light);
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color-light);
+    border: 2px solid var(--accent-color-light);
     border-radius: 8px;
     cursor: pointer;
 }
@@ -197,12 +198,16 @@ header {
 /* Modern bakery section  */
 .modern-bakery {
     padding: 272px 0px;
+    background-image: url('../img/main-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 
 /* Benefits section */
 .benefits {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-light);
     padding: 16px 0;
 }
 
@@ -214,7 +219,7 @@ header {
     font-size: 20px;
     font-weight: 300;
     color: var(--primary-light);
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-light);
 }
 
 
@@ -253,8 +258,18 @@ header {
 }
 
 .chefs__title {
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
     text-align: center;
+    max-width: 520px;
+}
+
+.chefs__title::after,
+.chefs__title::before {
+    background-color: var(--decor-light);
+    content: "";
+    display: block;
+    width: 352px;
+    height: 2px;
 }
 
 .chefs__container {
@@ -267,6 +282,11 @@ header {
 .chef {
     display: flex;
     gap: 30px
+}
+
+.chef__img {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--decor-dark);
 }
 
 .chef__content {
@@ -293,11 +313,19 @@ header {
 }
 
 .format {
-    border: 3px solid gray;
-    border-radius: 15px;
-    /* remove */
     padding: 24px;
+    height: 444px;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%);
+    border: 3px solid gray;
+    border-radius: 16px;
+    /* remove */
 }
+
+.format_walrus {}
+
+.format_horseshoe {}
+
+.format_handlebar {}
 
 .format__title {
     margin-bottom: 16px;
@@ -326,7 +354,11 @@ iframe {
 /* Footer */
 
 footer {
-    background-color: #31261A;
+    background-image: url('../img/footer-background.png');
+    background-color: var(--primary-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -338,7 +370,7 @@ footer {
 }
 
 .address__item:hover {
-    color: var(--accent-color);
+    color: var(--accent-color-light);
 }
 
 /* Mixes */
