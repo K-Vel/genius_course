@@ -94,32 +94,38 @@
           <h2 class="chefs__title">
             Наші найкращі <span class="text-accent">шеф-кухарі</span>
           </h2>
-          <ul class="chefs__container">
+          <ul class="chefs__list">
             <!-- First chef -->
-            <li>
+            <li class="chefs__item">
               <article class="chef">
                 <img
                   class="chef__img"
                   src="./img/nastya.jpg"
                   alt="Шеф-кухар Настя"
                 />
-                <div class="chef__content">
+                <div class="chef__description">
                   <h3>Настя</h3>
                   <p>Привіт, я Настя!</p>
-                  <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                  <p>Я випічу для вас найсмачніші вироби!</p>
+                  <p>
+                    Вже 10 років, я втілюю <br />
+                    у життя цікаві та смачні ідеї.
+                  </p>
+                  <p>
+                    Я випічу для вас <br />
+                    найсмачніші вироби!
+                  </p>
                 </div>
               </article>
             </li>
             <!-- Second chef -->
-            <li>
+            <li class="chefs__item">
               <article class="chef">
                 <img
                   class="chef__img"
                   src="./img/vlad.jpg"
                   alt="Шеф-кухар Влад"
                 />
-                <div class="chef__content">
+                <div class="chef__description">
                   <h3>Влад</h3>
                   <p>Привіт, я Влад!</p>
                   <p>
@@ -138,163 +144,178 @@
       <section class="formats" id="formats-section">
         <div class="container">
           <h2 class="formats__title">Формати</h2>
-          <button class="carousel-button" type="button">
-            <svg width="16px" height="16px">
-              <use href="./img/incons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="formats__list">
-            <!-- Walrus option -->
-            <li>
-              <article class="format format_walrus">
-                <h4 lang="en" class="format__title">Walrus</h4>
-                <div class="format__description">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-            <!-- Horseshoe option -->
-            <li>
-              <article class="format format_horseshoe">
-                <h4 lang="en" class="format__title">Horseshoe</h4>
-                <div class="format__description">
-                  <p>Площа: до 25 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-            <!-- Handlebar option -->
-            <li>
-              <article class="format format_handlebar">
-                <h4 lang="en" class="format__title">Handlebar</h4>
-                <div class="format__description">
-                  <p>Площа: до 15 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="carousel-button" type="button">
-            <svg width="16px" height="16px">
-              <use href="./img/incons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+          <div class="formats__content">
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./img/incons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats__list">
+              <!-- Walrus option -->
+              <li>
+                <article class="format format_walrus">
+                  <h4 lang="en" class="format__title">Walrus</h4>
+                  <div class="format__description">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <!-- Horseshoe option -->
+              <li>
+                <article class="format format_horseshoe">
+                  <h4 lang="en" class="format__title">Horseshoe</h4>
+                  <div class="format__description">
+                    <p>Площа: до 25 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
+              <!-- Handlebar option -->
+              <li>
+                <article class="format format_handlebar">
+                  <h4 lang="en" class="format__title">Handlebar</h4>
+                  <div class="format__description">
+                    <p>Площа: до 15 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./img/incons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!-- Join the bakery network section -->
       <section class="contacts" id="contacts-section">
         <div class="container">
-          <!-- Main content -->
-          <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <!-- Callback button -->
-          <button class="callback-button" type="button">
-            Замовити дзвінок
-          </button>
-          <p>
-            Натискаючи на кнопку я погоджуюсь з
-            <a href="#">політикою конфіденційності</a>
-          </p>
-          <!-- Map -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546568105!2d30.488658575917015!3d50.45666967159336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1714134080583!5m2!1sru!2spl"
-            width="603"
-            height="595"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contacts__container">
+            <!-- Main content -->
+            <div class="contacts__content">
+              <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <!-- Callback button -->
+              <button class="callback-button" type="button">
+                Замовити дзвінок
+              </button>
+              <p>
+                Натискаючи на кнопку я погоджуюсь з
+                <a href="#">політикою конфіденційності</a>
+              </p>
+            </div>
+            <!-- Map -->
+            <iframe
+              class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546568105!2d30.488658575917015!3d50.45666967159336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1714134080583!5m2!1sru!2spl"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <nav class="navigation">
-          <!-- Logo -->
-          <a class="navigation__logo" href="#"
-            ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
-          /></a>
-          <!-- Website navigation -->
-          <ul class="navigation__list">
-            <li>
-              <a class="navigation__item" href="#traditions-section"
-                >Наші традиції</a
-              >
-            </li>
-            <li>
-              <a class="navigation__item" href="#chefs-section">Шеф-кухарі</a>
-            </li>
-            <li>
-              <a class="navigation__item" href="#formats-section">Формати</a>
-            </li>
-            <li>
-              <a class="navigation__item" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Address information -->
-        <address class="address">
-          <ul class="address__list">
-            <li>
-              <a class="address__item" href="tel:+380960000007"
-                >+38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="address__item" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
+        <div class="footer__container">
+          <nav class="navigation navigation_footer">
+            <!-- Logo -->
+            <div class="navigation__logo_footer">
+              <a class="navigation__logo" href="#"
+                ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
+              /></a>
+            </div>
+            <!-- Website navigation -->
+            <ul class="navigation__list navigation__list_footer">
+              <li>
+                <a class="navigation__item" href="#traditions-section"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a class="navigation__item" href="#chefs-section">Шеф-кухарі</a>
+              </li>
+              <li>
+                <a class="navigation__item" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="navigation__item" href="#contacts-section"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- Address information -->
+          <address class="address">
+            <ul class="address__list">
+              <li>
+                <a class="address__item" href="tel:+380960000007"
+                  >+38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="address__item" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address__item"
+                  href="https://maps.app.goo.gl/c7Bgi1azpxMAwuxh7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Україна, м. Київ, вул. Січових Стрільців 54</a
+                >
+              </li>
+              <li>
+                <!-- Facebook icon -->
+                <a href="#">
+                  <svg class="address__icon" width="32px" height="32px">
+                    <use href="./img/incons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <!-- Instagram icon -->
+                <a href="#">
+                  <svg class="address__icon" width="32px" height="32px">
+                    <use href="./img/incons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address__info">
               <a
                 class="address__item"
-                href="https://maps.app.goo.gl/c7Bgi1azpxMAwuxh7"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Україна, м. Київ, вул. Січових Стрільців 54</a
+                >Політика конфіденційності</a
               >
-            </li>
-            <li>
-              <!-- Facebook icon -->
-              <a href="#">
-                <svg class="address__icon" width="32px" height="32px">
-                  <use href="./img/incons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-              <!-- Instagram icon -->
-              <a href="#">
-                <svg class="address__icon" width="32px" height="32px">
-                  <use href="./img/incons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a
-            class="address__item"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Політика конфіденційності</a
-          >
-          <p class="copyright-style">&copy; 2022 Дані захищені</p>
-        </address>
+              <p class="copyright-style">&copy; 2022 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
