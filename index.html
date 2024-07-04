@@ -38,7 +38,7 @@
             </ul>
           </nav>
           <!-- Callback button -->
-          <button class="callback-button" type="button">
+          <button class="callback-button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
         </div>
@@ -92,7 +92,8 @@
       <section class="chefs" id="chefs-section">
         <div class="container">
           <h2 class="chefs__title">
-            Наші найкращі <span class="text-accent">шеф-кухарі</span>
+            Наші найкращі <br />
+            <span class="text-accent">шеф-кухарі</span>
           </h2>
           <ul class="chefs__list">
             <!-- First chef -->
@@ -153,7 +154,7 @@
             <ul class="formats__list">
               <!-- Walrus option -->
               <li>
-                <article class="format format_walrus">
+                <article class="format">
                   <h4 lang="en" class="format__title">Walrus</h4>
                   <div class="format__description">
                     <p>Площа: до 120 м2</p>
@@ -168,7 +169,7 @@
               </li>
               <!-- Horseshoe option -->
               <li>
-                <article class="format format_horseshoe">
+                <article class="format">
                   <h4 lang="en" class="format__title">Horseshoe</h4>
                   <div class="format__description">
                     <p>Площа: до 25 м2</p>
@@ -183,7 +184,7 @@
               </li>
               <!-- Handlebar option -->
               <li>
-                <article class="format format_handlebar">
+                <article class="format">
                   <h4 lang="en" class="format__title">Handlebar</h4>
                   <div class="format__description">
                     <p>Площа: до 15 м2</p>
@@ -318,5 +319,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <button class="callback-button" type="button">Замовити дзвінок</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
