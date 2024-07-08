@@ -535,7 +535,6 @@ footer {
 }
 
 .backdrop.hidden {
-    /* display: none; */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -547,15 +546,89 @@ footer {
     max-width: 880px;
     height: 100%;
     max-height: 880px;
-    background-color: var(--primary-light);
+    padding: 128px;
     text-align: center;
+    background-color: var(--primary-light);
     border-radius: 32px;
+    overflow-y: auto;
 }
 
 .modal-btn-close {
     position: absolute;
     right: 40px;
     top: 40px;
+}
+
+.modal__content {
+    color: var(--accent-color-dark);
+}
+
+.modal__terms {
+    max-width: 220px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.modal__link {
+    color: var(--primary-dark);
+    text-underline-offset: 2px;
+}
+
+/* Form */
+
+
+.form_margin-top-72 {
+    margin-top: 72px;
+}
+
+.form_margin-top-42 {
+    margin-top: 42px;
+}
+
+.form__field {
+    margin-bottom: 32px;
+}
+
+.form__field_margin-24 {
+    margin-bottom: 24px;
+}
+
+
+.form__input {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border: 1px solid var(--decor-dark);
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.form__input:focus {
+    border-color: var(--accent-color-light);
+    outline: none;
+}
+
+.form__input::placeholder {
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--decor-dark);
+}
+
+.form__input:focus::placeholder {
+    color: var(--primary-dark);
+}
+
+.callback-button_form-style {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.callback-button_margin-16 {
+    margin-bottom: 16px;
 }
 
 /* Mixes */

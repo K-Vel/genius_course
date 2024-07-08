@@ -217,13 +217,63 @@
               <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
               <!-- Callback button -->
-              <button class="callback-button" type="button">
-                Замовити дзвінок
-              </button>
-              <p>
-                Натискаючи на кнопку я погоджуюсь з
-                <a href="#">політикою конфіденційності</a>
-              </p>
+              <form
+                class="form form_margin-top-42"
+                method="POST"
+                name="contact-form"
+                autocomplete="off"
+              >
+                <div class="form__field form__field_margin-24">
+                  <label class="visually-hidden" for="contact-name">Ім'я</label>
+                  <input
+                    class="form__input"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Ім'я"
+                    required
+                  />
+                </div>
+
+                <div class="form__field form__field_margin-24">
+                  <label class="visually-hidden" for="contact-phone"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+
+                <div class="form__field form__field_margin-24">
+                  <label class="visually-hidden" for="contact-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    id="contact-email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    placeholder="Електронна пошта"
+                    required
+                  />
+                </div>
+                <button
+                  class="callback-button callback-button_form-style callback-button_margin-16"
+                  type="submit"
+                >
+                  Замовити дзвінок
+                </button>
+                <p class="modal__terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="modal__link" href="/">політикою конфіденційності</a>
+                </p>
+              </form>
             </div>
             <!-- Map -->
             <iframe
@@ -324,7 +374,65 @@
     <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
-        <button class="callback-button" type="button">Замовити дзвінок</button>
+        <h2>Замовити дзвінок</h2>
+        <p class="modal__content">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form
+          class="form form_margin-top-72"
+          method="POST"
+          name="modal-form"
+          autocomplete="off"
+        >
+          <div class="form__field">
+            <label class="visually-hidden" for="modal-name">Ім'я</label>
+            <input
+              class="form__input"
+              id="modal-name"
+              name="name"
+              placeholder="Ім'я"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <label class="visually-hidden" for="modal-phone">Телефон</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="modal-phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="Телефон"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <label class="visually-hidden" for="modal-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              id="modal-email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+          <button
+            class="callback-button callback-button_form-style"
+            type="submit"
+          >
+            Замовити дзвінок
+          </button>
+          <p class="modal__terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="modal__link" href="/">політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
   </body>
