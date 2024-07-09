@@ -219,7 +219,6 @@
               <!-- Callback button -->
               <form
                 class="form form_margin-top-42"
-                method="POST"
                 name="contact-form"
                 autocomplete="off"
               >
@@ -243,7 +242,7 @@
                     type="tel"
                     id="contact-phone"
                     name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    pattern="^\d{10}$"
                     placeholder="Телефон"
                     required
                   />
@@ -263,6 +262,7 @@
                     required
                   />
                 </div>
+
                 <button
                   class="callback-button callback-button_form-style callback-button_margin-16"
                   type="submit"
@@ -373,14 +373,17 @@
     </footer>
     <div class="backdrop hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <svg class="icon-close" width="16px" height="16px">
+            <use href="./img/incons.svg#icon-cross"></use>
+          </svg>
+        </button>
         <h2>Замовити дзвінок</h2>
         <p class="modal__content">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
         <form
           class="form form_margin-top-72"
-          method="POST"
           name="modal-form"
           autocomplete="off"
         >
@@ -402,7 +405,7 @@
               type="tel"
               id="modal-phone"
               name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="^\d{10}$"
               placeholder="Телефон"
               required
             />

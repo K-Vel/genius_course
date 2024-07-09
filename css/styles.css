@@ -557,6 +557,16 @@ footer {
     position: absolute;
     right: 40px;
     top: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.icon-close {
+    fill: var(--primary-dark);
+}
+
+.modal-btn-close:hover .icon-close {
+    fill: var(--accent-color-dark)
 }
 
 .modal__content {
@@ -578,8 +588,6 @@ footer {
 }
 
 /* Form */
-
-
 .form_margin-top-72 {
     margin-top: 72px;
 }
@@ -595,7 +603,6 @@ footer {
 .form__field_margin-24 {
     margin-bottom: 24px;
 }
-
 
 .form__input {
     padding: 16px 42px;
