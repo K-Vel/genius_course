@@ -11,9 +11,9 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-container">
+        <div class="header__container">
           <nav class="navigation navigation_header">
             <!-- Logo -->
             <a href="/"
@@ -156,8 +156,8 @@
             </button>
             <ul class="formats__list">
               <!-- Walrus option -->
-              <li>
-                <article class="format">
+              <li class="formats__item">
+                <article class="format format-walrus">
                   <h4 lang="en" class="format__title">Walrus</h4>
                   <div class="format__description">
                     <p>Площа: до 120 м2</p>
@@ -171,8 +171,8 @@
                 </article>
               </li>
               <!-- Horseshoe option -->
-              <li>
-                <article class="format">
+              <li class="formats__item">
+                <article class="format format-horseshoe">
                   <h4 lang="en" class="format__title">Horseshoe</h4>
                   <div class="format__description">
                     <p>Площа: до 25 м2</p>
@@ -186,8 +186,8 @@
                 </article>
               </li>
               <!-- Handlebar option -->
-              <li>
-                <article class="format">
+              <li class="formats__item">
+                <article class="format format-handlebar">
                   <h4 lang="en" class="format__title">Handlebar</h4>
                   <div class="format__description">
                     <p>Площа: до 15 м2</p>
@@ -214,12 +214,12 @@
         <div class="container">
           <div class="contacts__container">
             <!-- Main content -->
-            <div class="contacts__content">
+            <div>
               <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
               <!-- Callback button -->
-              <form class="form form_margin-top-42" name="contact-form">
-                <div class="form__field form__field_margin-24">
+              <form class="form_margin-top-42" name="contact-form">
+                <div class="form__field_margin-24">
                   <label class="visually-hidden" for="contact-name">Ім'я</label>
                   <input
                     class="form__input"
@@ -230,7 +230,7 @@
                   />
                 </div>
 
-                <div class="form__field form__field_margin-24">
+                <div class="form__field_margin-24">
                   <label class="visually-hidden" for="contact-phone"
                     >Телефон</label
                   >
@@ -245,7 +245,7 @@
                   />
                 </div>
 
-                <div class="form__field form__field_margin-24">
+                <div class="form__field_margin-24">
                   <label class="visually-hidden" for="contact-email"
                     >Електронна пошта</label
                   >
@@ -379,8 +379,8 @@
         <p class="modal__content">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form class="form" name="modal-form">
-          <div class="form__field">
+        <form class="form_margin-top-72" name="modal-form">
+          <div class="form__field_margin-32">
             <label class="visually-hidden" for="modal-name">Ім'я</label>
             <input
               class="form__input"
@@ -391,7 +391,7 @@
             />
           </div>
 
-          <div class="form__field">
+          <div class="form__field_margin-32">
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input
               class="form__input"
@@ -404,7 +404,7 @@
             />
           </div>
 
-          <div class="form__field">
+          <div class="form__field_margin-32">
             <label class="visually-hidden" for="modal-email"
               >Електронна пошта</label
             >

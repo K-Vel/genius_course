@@ -1,4 +1,8 @@
 /* Navigation */
+.navigation {
+    display: flex;
+}
+
 .navigation__item {
     color: var(--primary-light);
     text-decoration: none;
@@ -11,9 +15,6 @@
 
 // Header
 /* Modificator */
-.navigation {
-    display: flex;
-}
 
 /* Modificator */
 .navigation_header {
