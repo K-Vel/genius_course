@@ -1,0 +1,77 @@
+/* Callback Button */
+.callback-button {
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-light);
+    background-color: var(--accent-color-light);
+    border: 2px solid var(--accent-color-light);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.callback-button:hover {
+    color: var(--accent-color-dark);
+    background-color: var(--primary-light);
+}
+
+/* Modifier */
+.callback-button_form-style {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+/* Modifier */
+.callback-button_margin-16 {
+    margin-bottom: 16px;
+}
+
+/* Carousel button */
+.carousel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--primary-dark);
+    cursor: pointer;
+
+    // for icon
+    fill: var(--primary-dark);
+}
+
+.carousel-button:hover {
+    background-color: var(--primary-dark);
+
+    // for icon
+    fill: var(--primary-light);
+}
+
+/* JS */
+// .modal-btn-open{}
+
+.modal-btn-close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    fill: var(--primary-dark);
+}
+
+
+.modal-btn-close:hover {
+    background-color: var(--primary-dark);
+    fill: var(--primary-light);
+}

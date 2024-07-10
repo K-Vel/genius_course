@@ -1,0 +1,88 @@
+/* Declaration Order */
+
+.declaration-order {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+
+    /* Typography */
+    font: normal 14px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+
+    /* Visual */
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    /* Misc */
+    opacity: 1;
+}
+
+// General
+
+/* Fonts */
+@import './utils/fonts.scss';
+
+/* Variables */
+@import './utils/variables.scss';
+
+/* Global styles */
+@import './base';
+
+/* Styling */
+@import './utils/utils.scss';
+
+
+// Content
+/* Navigation */
+@import './components/navigation.scss';
+
+/* Buttons */
+@import './components/buttons.scss';
+
+/* Modal window */
+@import './components/backdrop.scss';
+
+/* Form */
+@import './components/form.scss';
+
+
+// Sections
+/* Header */
+@import './components/sections/header.scss';
+
+/* Modern bakery section  */
+@import './components/sections/modern-bakery-section.scss';
+
+/* Benefits section */
+@import './components/sections/benefits-section.scss';
+
+/* Traditions section */
+@import './components/sections/traditions-section.scss';
+
+/* Chefs section */
+@import './components/sections/chefs-section.scss';
+
+/* Formats section */
+@import './components/sections/formats_section.scss';
+
+/* Contacts section */
+@import './components/sections/contacts-section.scss';
+
+/* Footer */
+@import './components/sections/footer.scss';

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Style -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <!-- Script -->
     <script defer src="./js/modal.js"></script>
     <title>Сучасна пекарня</title>
@@ -16,11 +16,11 @@
         <div class="header-container">
           <nav class="navigation navigation_header">
             <!-- Logo -->
-            <a class="navigation__logo" href="/"
+            <a href="/"
               ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
             /></a>
             <!-- Website navigation -->
-            <ul class="navigation__list navigation__list_header">
+            <ul class="navigation__list_header">
               <li>
                 <a class="navigation__item" href="#traditions-section"
                   >Наші традиції</a
@@ -84,6 +84,7 @@
               </p>
             </div>
             <img
+              class="traditions__img"
               src="./img/baker.jpg"
               alt="Чоловік пекар дивиться на батони із посмішкою"
             />
@@ -217,11 +218,7 @@
               <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
               <!-- Callback button -->
-              <form
-                class="form form_margin-top-42"
-                name="contact-form"
-                autocomplete="off"
-              >
+              <form class="form form_margin-top-42" name="contact-form">
                 <div class="form__field form__field_margin-24">
                   <label class="visually-hidden" for="contact-name">Ім'я</label>
                   <input
@@ -269,9 +266,9 @@
                 >
                   Замовити дзвінок
                 </button>
-                <p class="modal__terms">
+                <p class="form__terms">
                   Натискаючи на кнопку я погоджуюсь з
-                  <a class="modal__link" href="/">політикою конфіденційності</a>
+                  <a class="form__link" href="/">політикою конфіденційності</a>
                 </p>
               </form>
             </div>
@@ -296,12 +293,12 @@
           <nav class="navigation navigation_footer">
             <!-- Logo -->
             <div class="navigation__logo_footer">
-              <a class="navigation__logo" href="#"
+              <a href="#"
                 ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
               /></a>
             </div>
             <!-- Website navigation -->
-            <ul class="navigation__list navigation__list_footer">
+            <ul class="navigation__list_footer">
               <li>
                 <a class="navigation__item" href="#traditions-section"
                   >Наші традиції</a
@@ -382,11 +379,7 @@
         <p class="modal__content">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form
-          class="form form_margin-top-72"
-          name="modal-form"
-          autocomplete="off"
-        >
+        <form class="form" name="modal-form">
           <div class="form__field">
             <label class="visually-hidden" for="modal-name">Ім'я</label>
             <input
@@ -431,9 +424,9 @@
           >
             Замовити дзвінок
           </button>
-          <p class="modal__terms">
+          <p class="form__terms">
             Натискаючи на кнопку я погоджуюсь з
-            <a class="modal__link" href="/">політикою конфіденційності</a>
+            <a class="form__link" href="/">політикою конфіденційності</a>
           </p>
         </form>
       </div>

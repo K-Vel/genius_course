@@ -1,0 +1,28 @@
+/* Styling */
+
+.text-accent {
+    color: var(--accent-color-light);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.copyright-style {
+    font-size: 14px;
+    color: var(--decor-dark);
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.reversed {
+    transform: rotate(180deg);
+}
