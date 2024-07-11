@@ -1,21 +1,21 @@
 /* Contacts section */
 .contacts {
     padding: 48px 0 96px;
-}
 
-.contacts__container {
-    display: flex;
-    gap: 32px;
-}
+    &__container {
+        display: flex;
+        gap: 32px;
+    }
 
-.contacts__title {
-    margin-bottom: 16px;
-}
+    &__title {
+        margin-bottom: 16px;
+    }
 
-.contacts__map {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 603px;
-    border: 0;
-    border-radius: 16px;
+    &__map {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 603px;
+        border: 0;
+        border-radius: 16px;
+    }
 }

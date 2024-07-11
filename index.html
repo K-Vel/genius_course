@@ -20,7 +20,7 @@
               ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
             /></a>
             <!-- Website navigation -->
-            <ul class="navigation__list_header">
+            <ul class="navigation__list navigation__list_header">
               <li>
                 <a class="navigation__item" href="#traditions-section"
                   >Наші традиції</a
@@ -51,7 +51,7 @@
       <!-- Modern bakery section -->
       <section class="modern-bakery">
         <div class="container">
-          <h1><span class="text-accent">Сучасна</span> пекарня</h1>
+          <h1><span class="text-accent-light">Сучасна</span> пекарня</h1>
         </div>
       </section>
       <!-- Benefits section -->
@@ -59,9 +59,9 @@
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="benefits__list">
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+            <li class="benefits__item">Великий попит на ринку</li>
+            <li class="benefits__item">Доступні за бюджетом формати</li>
+            <li class="benefits__item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
@@ -71,14 +71,18 @@
           <div class="traditions__container">
             <div class="traditions__content">
               <h2 class="traditions__title">Новий формат традицій</h2>
-              <p>
-                <span class="text-accent text-uppercase">shop bakery</span> — це
-                пекарня, яка взяла все найкраще, і зберегла смак традиційної
-                випічки та натуральність інгредієнтів.
-              </p>
               <p class="traditions__text">
+                <span class="text-accent-light text-uppercase text-bold-600"
+                  >shop bakery</span
+                >
+                — це пекарня, яка взяла все найкраще, і зберегла смак
+                традиційної випічки та натуральність інгредієнтів.
+              </p>
+              <p class="traditions__text traditions__text_limited">
                 Ми працюємо як найвідоміші мережі —
-                <span class="text-accent">5 хвилин і замовлення готове.</span>
+                <span class="text-accent-light text-bold-600"
+                  >5 хвилин і замовлення готове.</span
+                >
                 А ще у наших пекарень стильний дизайн та висока якість
                 обслуговування!
               </p>
@@ -96,7 +100,7 @@
         <div class="container">
           <h2 class="chefs__title">
             Наші найкращі <br />
-            <span class="text-accent">шеф-кухарі</span>
+            <span class="text-accent-dark">шеф-кухарі</span>
           </h2>
           <ul class="chefs__list">
             <!-- First chef -->
@@ -216,10 +220,12 @@
             <!-- Main content -->
             <div>
               <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <p class="text-accent-dark">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
               <!-- Callback button -->
-              <form class="form_margin-top-42" name="contact-form">
-                <div class="form__field_margin-24">
+              <form class="form form_margin-top-42" name="contact-form">
+                <div class="form__field form__field_margin-24">
                   <label class="visually-hidden" for="contact-name">Ім'я</label>
                   <input
                     class="form__input"
@@ -229,8 +235,7 @@
                     required
                   />
                 </div>
-
-                <div class="form__field_margin-24">
+                <div class="form__field form__field_margin-24">
                   <label class="visually-hidden" for="contact-phone"
                     >Телефон</label
                   >
@@ -244,8 +249,7 @@
                     required
                   />
                 </div>
-
-                <div class="form__field_margin-24">
+                <div class="form__field form__field_margin-24">
                   <label class="visually-hidden" for="contact-email"
                     >Електронна пошта</label
                   >
@@ -259,7 +263,6 @@
                     required
                   />
                 </div>
-
                 <button
                   class="callback-button callback-button_form-style callback-button_margin-16"
                   type="submit"
@@ -292,13 +295,13 @@
         <div class="footer__container">
           <nav class="navigation navigation_footer">
             <!-- Logo -->
-            <div class="navigation__logo_footer">
+            <div class="navigation__logo">
               <a href="#"
                 ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
               /></a>
             </div>
             <!-- Website navigation -->
-            <ul class="navigation__list_footer">
+            <ul class="navigation__list navigation__list_footer">
               <li>
                 <a class="navigation__item" href="#traditions-section"
                   >Наші традиції</a
@@ -379,8 +382,8 @@
         <p class="modal__content">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form class="form_margin-top-72" name="modal-form">
-          <div class="form__field_margin-32">
+        <form class="form form_margin-top-72" name="modal-form">
+          <div class="form__field form__field_margin-32">
             <label class="visually-hidden" for="modal-name">Ім'я</label>
             <input
               class="form__input"
@@ -390,8 +393,7 @@
               required
             />
           </div>
-
-          <div class="form__field_margin-32">
+          <div class="form__field form__field form__field_margin-32">
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input
               class="form__input"
@@ -403,8 +405,7 @@
               required
             />
           </div>
-
-          <div class="form__field_margin-32">
+          <div class="form__field form__field_margin-32">
             <label class="visually-hidden" for="modal-email"
               >Електронна пошта</label
             >

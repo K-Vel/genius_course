@@ -1,27 +1,28 @@
 /* Formats section */
 .formats {
     padding: 48px 0;
+
+    &__title {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 40px) / 3);
+    }
 }
 
-.formats__title {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-.formats__content {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-
-.formats__list {
-    display: flex;
-    gap: 20px;
-}
-
-.formats__item {
-    flex-basis: calc((100% - 40px) / 3);
-}
 
 .format {
     padding: 24px;
@@ -32,30 +33,29 @@
     color: var(--primary-light);
     border-radius: 16px;
     transition: transform 0.3;
-    border: 1px solid black;
-}
 
-.format:hover {
-    transform: scale(1.04);
-}
+    &:hover {
+        transform: scale(1.04);
+    }
 
-.format-walrus {
-    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%), url('../img/walrus-format.jpg');
-}
+    &-walrus {
+        background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%), url('../img/walrus-format.jpg');
+    }
 
-.format-horseshoe {
-    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%), url('../img/horseshoe-format.jpg');
-}
+    &-horseshoe {
+        background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%), url('../img/horseshoe-format.jpg');
+    }
 
-.format-handlebar {
-    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%), url('../img/handlebar-format.jpg');
-}
+    &-handlebar {
+        background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%), url('../img/handlebar-format.jpg');
+    }
 
-.format__title {
-    margin-bottom: 16px;
-}
+    &__title {
+        margin-bottom: 16px;
+    }
 
-.format__description {
-    font-size: 14px;
-    font-weight: 300;
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+    }
 }

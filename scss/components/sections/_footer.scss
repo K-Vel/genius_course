@@ -1,5 +1,5 @@
 /* Footer */
-footer {
+.footer {
     position: relative;
     background-image: url('../img/footer-background.png');
     background-color: var(--primary-dark);
@@ -7,65 +7,65 @@ footer {
     background-position: center;
     background-size: cover;
     padding: 32px 0;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &::before {
+        width: 180px;
+        height: 120px;
+        background-image: url('../img/footer-decor-bread-small.png');
+    }
+
+    &::after {
+        right: 0px;
+        width: 380px;
+        height: 190px;
+        background-image: url('../img/footer-decor-bread-big.png');
+    }
+
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
 }
 
-.footer::before,
-.footer::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.footer::before {
-    width: 180px;
-    height: 120px;
-    background-image: url('../img/footer-decor-bread-small.png');
-}
-
-.footer::after {
-    right: 0px;
-    width: 380px;
-    height: 190px;
-    background-image: url('../img/footer-decor-bread-big.png');
-}
-
-.footer__container {
-    display: flex;
-    gap: 20px;
-}
 
 .address {
     flex-basis: 50%;
     display: flex;
     gap: 20px;
-}
 
-.address__list {
-    flex-basis: 50%;
-}
+    &__list {
+        flex-basis: 50%;
+    }
 
-.address__item {
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--primary-light);
-    text-decoration: none;
-}
+    &__item {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--primary-light);
+        text-decoration: none;
+    }
 
-.address__item:hover {
-    color: var(--accent-color-light);
-}
+    &__item:hover {
+        color: var(--accent-color-light);
+    }
 
+    &__icon {
+        fill: var(--primary-light);
+    }
 
-.address__icon {
-    fill: var(--primary-light);
-}
+    &__ico:hover {
+        fill: var(--accent-color-light);
+    }
 
-.address__icon:hover {
-    fill: var(--accent-color-light);
-}
-
-.address__info {
-    flex-basis: 50%;
+    &__info {
+        flex-basis: 50%;
+    }
 }

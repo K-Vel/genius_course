@@ -41,14 +41,15 @@
 
     // for icon
     fill: var(--primary-dark);
+
+    &:hover {
+        background-color: var(--primary-dark);
+
+        // for icon
+        fill: var(--primary-light);
+    }
 }
 
-.carousel-button:hover {
-    background-color: var(--primary-dark);
-
-    // for icon
-    fill: var(--primary-light);
-}
 
 /* JS */
 // .modal-btn-open{}
@@ -68,10 +69,9 @@
     border-radius: 50%;
 
     fill: var(--primary-dark);
-}
 
-
-.modal-btn-close:hover {
-    background-color: var(--primary-dark);
-    fill: var(--primary-light);
+    &:hover {
+        background-color: var(--primary-dark);
+        fill: var(--primary-light);
+    }
 }

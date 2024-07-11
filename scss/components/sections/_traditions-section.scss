@@ -2,30 +2,32 @@
 .traditions {
     padding-top: 96px;
     padding-bottom: 48px;
-}
 
-.traditions__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
 
-.traditions__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 710px;
-    gap: 42px;
-}
+    }
 
-.traditions__title {
-    margin-bottom: 42px;
-}
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 710px;
+        gap: 42px;
+    }
 
-.traditions__text {
-    max-width: 340px;
-}
+    &__title {
+        margin-bottom: 42px;
+    }
 
-.traditions__img {
-    border-radius: 400px 400px 0px 0px;
+    // modificator
+    &__text_limited {
+        max-width: 340px;
+    }
+
+    &__img {
+        border-radius: 400px 400px 0px 0px;
+    }
 }

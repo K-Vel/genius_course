@@ -2,15 +2,19 @@
 .benefits {
     background-color: var(--accent-color-light);
     padding: 16px 0;
-}
 
-.benefits__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--primary-light);
-    background-color: var(--accent-color-light);
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--primary-light);
+        background-color: var(--accent-color-light);
+    }
+
+    &__item:hover {
+        transform: scale(1.06);
+    }
 }
