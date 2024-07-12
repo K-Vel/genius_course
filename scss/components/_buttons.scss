@@ -50,6 +50,32 @@
     }
 }
 
+/* Carousel button */
+.ellipses-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    &_margin-24 {
+        margin-top: 24px;
+    }
+
+    &__button {
+        flex-shrink: 0;
+        width: 11px;
+        height: 11px;
+        border: none;
+        border-radius: 50%;
+        background-color: var(--decor-dark);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--accent-color-dark);
+        }
+    }
+}
+
+
 
 /* JS */
 // .modal-btn-open{}

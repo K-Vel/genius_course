@@ -38,12 +38,16 @@
 
 
 .address {
-    flex-basis: 50%;
     display: flex;
+    flex-basis: 50%;
     gap: 20px;
 
     &__list {
         flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
     }
 
     &__item {
@@ -59,13 +63,22 @@
 
     &__icon {
         fill: var(--primary-light);
+
+        // Modifier
+        &_margin-22 {
+            margin-right: 22px;
+        }
     }
 
-    &__ico:hover {
+    &__icon:hover {
         fill: var(--accent-color-light);
     }
 
     &__info {
         flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
     }
 }
