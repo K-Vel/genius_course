@@ -1,5 +1,11 @@
 /* Navigation */
+
+// mobile
+// tablet
+// desktop
+
 .navigation {
+    // General
     display: flex;
 
     &__item {
@@ -12,41 +18,85 @@
         color: var(--accent-color-light);
     }
 
+    &__img {
+        width: 72px;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 114px;
+        }
+    }
+
+    /* Modificators */
     // Header
-    /* Modificator */
     &_header {
         align-items: center;
         flex-grow: 1;
         gap: 40px;
     }
 
-    /* Modificator */
     &__list_header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 1;
-        gap: 64px;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            gap: 64px;
+        }
     }
 
     // Footer
-    /* Modificator */
     &_footer {
         flex-basis: 50%;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
     }
 
-    /* Modificator */
-    &__logo {
+    &__logo_footer {
         flex-basis: 50%;
     }
 
-    /* Modificator */
     &__list_footer {
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
         justify-content: start;
         gap: 16px;
+        align-items: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            align-items: flex-start;
+        }
     }
+
+
+    // Mobile menu
+    &_mobile-menu {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__list_mobile-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__item_mobile-menu {
+        color: var(--primary-dark);
+
+        &:hover {
+            color: var(--accent-color-light);
+        }
+    }
+
+
 }

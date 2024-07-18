@@ -1,13 +1,23 @@
 /* Header */
+
+// mobile
+// tablet
+// desktop
+
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 32px;
+    padding-top: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 32px;
+
+    }
 
     // Wrapper
-    &__container {
+    &__inner {
         display: flex;
         align-items: center;
         gap: 40px;

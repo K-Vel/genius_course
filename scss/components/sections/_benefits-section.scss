@@ -1,20 +1,65 @@
 /* Benefits section */
+
+// mobile
+// tablet
+// desktop
+
 .benefits {
-    background-color: var(--accent-color-light);
-    padding: 16px 0;
+    background-color: transparent;
+    padding: 40px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        background-color: var(--accent-color-light);
+        padding: 10px 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 16px 0;
+    }
 
     &__list {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        gap: 40px;
-        font-size: 20px;
+        gap: 16px;
+        padding: 24px 40px;
+        background-color: var(--decor-light);
+        border-radius: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding: 0;
+            background-color: transparent;
+            border-radius: none;
+        }
+
+    }
+
+    &__item {
+        color: var(--primary-dark);
+        font-size: 14px;
         font-weight: 300;
-        color: var(--primary-light);
-        background-color: var(--accent-color-light);
+
+        @media screen and (min-width: $bp-tablet) {
+            color: var(--primary-light);
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 20px;
+        }
     }
 
     &__item:hover {
-        transform: scale(1.06);
+        font-weight: 600;
+
+        @media screen and (min-width: $bp-tablet) {
+            color: var(--primary-light);
+            transform: scale(1.06);
+
+        }
     }
 }

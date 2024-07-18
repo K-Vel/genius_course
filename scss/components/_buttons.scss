@@ -1,34 +1,80 @@
+// Buttons
+
+// mobile
+// tablet
+// desktop
+
 /* Callback Button */
 .callback-button {
-    padding: 16px 32px;
-    font-size: 18px;
+    // General
+    display: block;
+    padding: 10px 24px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--primary-light);
     background-color: var(--accent-color-light);
     border: 2px solid var(--accent-color-light);
     border-radius: 8px;
     cursor: pointer;
+
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+
+    &:hover {
+        color: var(--accent-color-dark);
+        background-color: var(--primary-light);
+    }
+
+    // Modificators
+    // Header
+    &_header {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
 }
 
-.callback-button:hover {
-    color: var(--accent-color-dark);
-    background-color: var(--primary-light);
+// Burger button
+.header__burger {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+
+    fill: var(--primary-light);
+
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
 }
 
-/* Modifier */
+.modern-bakery_button {
+    margin: 0px auto;
+
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
+}
+
+/* Modificator */
 .callback-button_form-style {
-    display: block;
     margin: 0 auto 24px;
 }
 
-/* Modifier */
+/* Modificator */
 .callback-button_margin-16 {
     margin-bottom: 16px;
 }
 
+
+
 /* Carousel button */
 .carousel-button {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -42,6 +88,10 @@
     // for icon
     fill: var(--primary-dark);
 
+    @media screen and (min-width: $bp-desktop) {
+        display: flex;
+    }
+
     &:hover {
         background-color: var(--primary-dark);
 
@@ -50,10 +100,11 @@
     }
 }
 
-/* Carousel button */
-.ellipses-container {
+/* Ellipses button */
+.pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 
     &_margin-24 {
@@ -62,14 +113,14 @@
 
     &__button {
         flex-shrink: 0;
-        width: 11px;
-        height: 11px;
+        width: 12px;
+        height: 12px;
         border: none;
         border-radius: 50%;
         background-color: var(--decor-dark);
         cursor: pointer;
 
-        &:hover {
+        &_active {
             background-color: var(--accent-color-dark);
         }
     }
@@ -79,16 +130,17 @@
 
 /* JS */
 // .modal-btn-open{}
+// .menu-btn-close{}
 
-.modal-btn-close {
+.button-close {
     position: absolute;
     right: 40px;
     top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     padding: 0px;
     background-color: transparent;
     border: none;
@@ -96,8 +148,19 @@
 
     fill: var(--primary-dark);
 
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 30px;
+        height: 30px;
+    }
+
     &:hover {
         background-color: var(--primary-dark);
         fill: var(--primary-light);
     }
+}
+
+.menu-btn-close {
+    right: 24px;
+    top: 16px;
 }

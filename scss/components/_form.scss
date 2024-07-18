@@ -1,23 +1,38 @@
 /* Form */
 
+// mobile
+// tablet
+// desktop
 
 .form {
 
     /* Modifier */
-    &_margin-top-72 {
-        margin-top: 72px;
+    &_backdrop {
+        margin-top: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-top: 72px;
+        }
     }
 
     /* Modifier */
-    &_margin-top-42 {
-        margin-top: 42px;
+    &_contacts {
+        margin-top: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-top: 42px;
+        }
     }
 
     &__field {
 
         /* Modifier */
-        &_margin-32 {
-            margin-bottom: 32px;
+        &_margin-backdrop {
+            margin-bottom: 24px;
+
+            @media screen and (min-width: $bp-desktop) {
+                margin-bottom: 32px;
+            }
         }
 
         /* Modifier */
@@ -53,12 +68,22 @@
     }
 
     &__terms {
+        display: none;
         max-width: 220px;
         margin: 0 auto;
         font-size: 12px;
         font-weight: 500;
         line-height: 1.5;
         text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+            margin: 24px auto;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-top: 42px;
+        }
     }
 
     &__link {

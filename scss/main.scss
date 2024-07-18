@@ -36,6 +36,7 @@
     opacity: 1;
 }
 
+
 // General
 
 /* Fonts */
@@ -60,6 +61,9 @@
 
 /* Modal window */
 @import './components/backdrop.scss';
+
+/* Menu modal */
+@import './components/mobile-menu.scss';
 
 /* Form */
 @import './components/form.scss';

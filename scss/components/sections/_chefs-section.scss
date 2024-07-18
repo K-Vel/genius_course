@@ -1,20 +1,46 @@
 /* Chefs section */
+
+// mobile
+// tablet
+// desktop
+
 .chefs {
-    padding: 48px 0;
+    padding: 20px 0;
+
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 48px 0;
+    }
 
     &__title {
         position: relative;
-        margin: 0 auto 80px;
+        margin: 0 auto 24px;
         text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin: 0 auto 80px;
+        }
 
         &::after,
         &::before {
+            display: none;
             background-color: var(--decor-light);
             content: "";
             position: absolute;
             bottom: 24px;
-            width: 352px;
-            height: 2px;
+
+
+            @media screen and (min-width: $bp-tablet) {
+                display: block;
+                width: 260px;
+                height: 2px;
+            }
+
+            @media screen and (min-width: $bp-desktop) {
+                display: block;
+                width: 352px;
+                height: 2px;
+            }
         }
 
         &::before {
@@ -28,24 +54,46 @@
 
     &__list {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        gap: 40px 30px;
+        gap: 25px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 40px 30px;
+
+        }
     }
 
     &__item {
-        flex-basis: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
     }
 }
 
 
 .chef {
     display: flex;
-    gap: 30px;
-    min-width: 500px;
+    align-items: flex-start;
+    gap: 16px;
+
 
     &__img {
+        width: 140px;
         border-radius: 4px 4px 4px 200px;
-        box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--decor-dark);
+        box-shadow: -10px 10px 0 0 var(--primary-light), -10px 10px 0 2px var(--decor-dark);
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 160px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 30px;
+            box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--decor-dark);
+            width: 240px;
+        }
 
         &:hover {
             transform: scale(1.04);
@@ -55,6 +103,11 @@
     &__description {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 8px;
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 24px;
+
+        }
     }
 }

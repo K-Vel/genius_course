@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- Script -->
     <script defer src="./js/modal.js"></script>
+    <script defer src="./js/menu-modal.js"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="./js/swiper.js"></script>
     <title>Сучасна пекарня</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <div class="header__container">
+        <div class="header__inner">
+          <!-- Navigation -->
           <nav class="navigation navigation_header">
-            <!-- Logo -->
             <a href="/"
-              ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
+              ><img
+                class="navigation__img"
+                src="./img/logo.svg"
+                alt="Логотип сучасної пекарні"
             /></a>
-            <!-- Website navigation -->
             <ul class="navigation__list navigation__list_header">
               <li>
                 <a class="navigation__item" href="#traditions-section"
@@ -40,9 +53,64 @@
             </ul>
           </nav>
           <!-- Callback button -->
-          <button class="callback-button modal-btn-open" type="button">
+          <button
+            class="callback-button callback-button_header modal-btn-open"
+            type="button"
+          >
             Замовити дзвінок
           </button>
+          <!-- Burger button -->
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <!-- Mobile menu -->
+          <div class="mobile-menu">
+            <button class="button-close menu-btn-close" type="button">
+              <svg class="icon-close" width="12px" height="12px">
+                <use href="./img/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="navigation navigation_mobile-menu">
+              <a href="/"
+                ><img
+                  class="navigation__img"
+                  src="./img/logo-mobile.svg"
+                  alt="Логотип сучасної пекарні"
+              /></a>
+              <ul class="navigation__list navigation__list_mobile-menu">
+                <li>
+                  <a
+                    class="navigation__item navigation__item_mobile-menu"
+                    href="#traditions-section"
+                    >Наші традиції</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navigation__item navigation__item_mobile-menu"
+                    href="#chefs-section"
+                    >Шеф-кухарі</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navigation__item navigation__item_mobile-menu"
+                    href="#formats-section"
+                    >Формати</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navigation__item navigation__item_mobile-menu"
+                    href="#contacts-section"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -51,7 +119,15 @@
       <!-- Modern bakery section -->
       <section class="modern-bakery">
         <div class="container">
-          <h1><span class="text-accent-light">Сучасна</span> пекарня</h1>
+          <h1 class="modern-bakery__title">
+            <span class="text-accent-light">Сучасна</span> пекарня
+          </h1>
+          <button
+            class="callback-button modern-bakery_button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <!-- Benefits section -->
@@ -89,6 +165,7 @@
             </div>
             <img
               class="traditions__img"
+              srcset="./img/baker.jpg 1x, ./img/baker@2x.jpg 2x"
               src="./img/baker.jpg"
               alt="Чоловік пекар дивиться на батони із посмішкою"
             />
@@ -108,20 +185,15 @@
               <article class="chef">
                 <img
                   class="chef__img"
+                  srcset="./img/nastya.jpg 1x, ./img/nastya@2x.jpg 2x"
                   src="./img/nastya.jpg"
                   alt="Шеф-кухар Настя"
                 />
                 <div class="chef__description">
                   <h3>Настя</h3>
                   <p>Привіт, я Настя!</p>
-                  <p>
-                    Вже 10 років, я втілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p>
-                    Я випічу для вас <br />
-                    найсмачніші вироби!
-                  </p>
+                  <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніші вироби!</p>
                 </div>
               </article>
             </li>
@@ -130,6 +202,7 @@
               <article class="chef">
                 <img
                   class="chef__img"
+                  srcset="./img/vlad.jpg 1x, ./img/vlad@2x.jpg 2x"
                   src="./img/vlad.jpg"
                   alt="Шеф-кухар Влад"
                 />
@@ -153,68 +226,119 @@
         <div class="container">
           <h2 class="formats__title">Формати</h2>
           <div class="formats__content">
-            <button class="carousel-button" type="button">
+            <!-- Decoration icon -->
+            <button class="carousel-button prev" type="button">
               <svg width="16px" height="16px">
-                <use href="./img/incons.svg#icon-arrow"></use>
+                <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="formats__list">
-              <!-- Walrus option -->
-              <li class="formats__item">
-                <article class="format format-walrus">
-                  <h4 lang="en" class="format__title">Walrus</h4>
-                  <div class="format__description">
-                    <p>Площа: до 120 м2</p>
-                    <p>Меню: розширене меню</p>
-                    <p>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </p>
-                    <p>Посадкові місця: є</p>
-                  </div>
-                </article>
-              </li>
-              <!-- Horseshoe option -->
-              <li class="formats__item">
-                <article class="format format-horseshoe">
-                  <h4 lang="en" class="format__title">Horseshoe</h4>
-                  <div class="format__description">
-                    <p>Площа: до 25 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </p>
-                    <p>Посадкові місця: відсутні</p>
-                  </div>
-                </article>
-              </li>
-              <!-- Handlebar option -->
-              <li class="formats__item">
-                <article class="format format-handlebar">
-                  <h4 lang="en" class="format__title">Handlebar</h4>
-                  <div class="format__description">
-                    <p>Площа: до 15 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </p>
-                    <p>Посадкові місця: відсутні</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <button class="carousel-button reversed" type="button">
+            <div class="formats__swiper swiper-container">
+              <ul class="swiper-wrapper">
+                <!-- Walrus option -->
+                <li class="swiper-slide">
+                  <article class="format format-walrus">
+                    <h4 lang="en" class="format__title">Walrus</h4>
+                    <div class="format__description">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <!-- Horseshoe option -->
+                <li class="swiper-slide">
+                  <article class="format format-horseshoe">
+                    <h4 lang="en" class="format__title">Horseshoe</h4>
+                    <div class="format__description">
+                      <p>Площа: до 25 м2</p>
+                      <p>Меню: найпопулярніші позиції меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: відсутні</p>
+                    </div>
+                  </article>
+                </li>
+                <!-- Handlebar option -->
+                <li class="swiper-slide">
+                  <article class="format format-handlebar">
+                    <h4 lang="en" class="format__title">Handlebar</h4>
+                    <div class="format__description">
+                      <p>Площа: до 15 м2</p>
+                      <p>Меню: найпопулярніші позиції меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: відсутні</p>
+                    </div>
+                  </article>
+                </li>
+                <!-- Walrus option copy -->
+                <li class="swiper-slide">
+                  <article class="format format-walrus">
+                    <h4 lang="en" class="format__title">Walrus</h4>
+                    <div class="format__description">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <!-- Horseshoe option copy-->
+                <li class="swiper-slide">
+                  <article class="format format-horseshoe">
+                    <h4 lang="en" class="format__title">Horseshoe</h4>
+                    <div class="format__description">
+                      <p>Площа: до 25 м2</p>
+                      <p>Меню: найпопулярніші позиції меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: відсутні</p>
+                    </div>
+                  </article>
+                </li>
+                <!-- Handlebar option copy-->
+                <li class="swiper-slide">
+                  <article class="format format-handlebar">
+                    <h4 lang="en" class="format__title">Handlebar</h4>
+                    <div class="format__description">
+                      <p>Площа: до 15 м2</p>
+                      <p>Меню: найпопулярніші позиції меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: відсутні</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <!-- Decoration icon -->
+            <button class="carousel-button next" type="button">
               <svg width="16px" height="16px">
-                <use href="./img/incons.svg#icon-arrow"></use>
+                <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
-          <div class="ellipses-container ellipses-container_margin-24">
-            <button class="ellipses-container__button" type="button"></button>
-            <button class="ellipses-container__button" type="button"></button>
-            <button class="ellipses-container__button" type="button"></button>
+          <!-- Decoration ellipses-icons -->
+          <div class="pagination pagination_margin-24">
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
+            <span class="pagination__button"></span>
           </div>
         </div>
       </section>
@@ -222,14 +346,13 @@
       <section class="contacts" id="contacts-section">
         <div class="container">
           <div class="contacts__container">
-            <!-- Main content -->
             <div>
               <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
-              <p class="text-accent-dark">
+              <p class="contacts__content text-accent-dark">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <!-- Callback button -->
-              <form class="form form_margin-top-42" name="contact-form">
+              <!-- Form -->
+              <form class="form form_contacts" name="contact-form">
                 <div class="form__field form__field_margin-24">
                   <label class="visually-hidden" for="contact-name">Ім'я</label>
                   <input
@@ -284,8 +407,6 @@
             <iframe
               class="contacts__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546568105!2d30.488658575917015!3d50.45666967159336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1714134080583!5m2!1sru!2spl"
-              width="603"
-              height="595"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -300,9 +421,12 @@
         <div class="footer__container">
           <nav class="navigation navigation_footer">
             <!-- Logo -->
-            <div class="navigation__logo">
+            <div class="navigation__logo_footer">
               <a href="#"
-                ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
+                ><img
+                  class="navigation__img"
+                  src="./img/logo.svg"
+                  alt="Логотип сучасної пекарні"
               /></a>
             </div>
             <!-- Website navigation -->
@@ -351,13 +475,13 @@
                 <!-- Facebook icon -->
                 <a class="address__icon_margin-22" href="#">
                   <svg class="address__icon" width="32px" height="32px">
-                    <use href="./img/incons.svg#icon-facebook"></use>
+                    <use href="./img/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <!-- Instagram icon -->
                 <a href="#">
                   <svg class="address__icon" width="32px" height="32px">
-                    <use href="./img/incons.svg#icon-instagram"></use>
+                    <use href="./img/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -378,17 +502,17 @@
     </footer>
     <div class="backdrop hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">
+        <button class="button-close modal-btn-close" type="button">
           <svg class="icon-close" width="16px" height="16px">
-            <use href="./img/incons.svg#icon-cross"></use>
+            <use href="./img/icons.svg#icon-cross"></use>
           </svg>
         </button>
-        <h2>Замовити дзвінок</h2>
+        <h2 class="modal__title">Замовити дзвінок</h2>
         <p class="modal__content">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form class="form form_margin-top-72" name="modal-form">
-          <div class="form__field form__field_margin-32">
+        <form class="form form_backdrop" name="modal-form">
+          <div class="form__field form__field_margin-backdrop">
             <label class="visually-hidden" for="modal-name">Ім'я</label>
             <input
               class="form__input"
@@ -398,7 +522,7 @@
               required
             />
           </div>
-          <div class="form__field form__field form__field_margin-32">
+          <div class="form__field form__field form__field_margin-backdrop">
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input
               class="form__input"
@@ -410,7 +534,7 @@
               required
             />
           </div>
-          <div class="form__field form__field_margin-32">
+          <div class="form__field form__field_margin-backdrop">
             <label class="visually-hidden" for="modal-email"
               >Електронна пошта</label
             >
