@@ -21,7 +21,7 @@
         padding-bottom: 48px;
     }
 
-    &__container {
+    &__inner {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -49,11 +49,6 @@
         @media screen and (min-width: $bp-tablet) {
             margin-bottom: 0px;
         }
-    }
-
-    // modificator
-    &__text_limited {
-        max-width: 340px;
     }
 
     &__img {

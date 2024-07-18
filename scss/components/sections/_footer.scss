@@ -6,12 +6,12 @@
 
 .footer {
     position: relative;
+    padding: 32px 0;
     background-image: url('../img/footer-background.png');
     background-color: var(--primary-dark);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 32px 0;
     text-align: center;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -92,7 +92,7 @@
 
     }
 
-    &__container {
+    &__inner {
         display: flex;
         flex-direction: column;
         gap: 18px;
@@ -135,30 +135,25 @@
         @media screen and (min-width: $bp-tablet) {
             font-size: 16px;
         }
-    }
 
-    &__item:hover {
-        color: var(--accent-color-light);
+        &:hover {
+            color: var(--accent-color-light);
+        }
     }
 
     &__icon {
         fill: var(--primary-light);
 
-        // Modifier
-        &_margin-22 {
-            margin-right: 22px;
+        &:hover {
+            fill: var(--accent-color-light);
         }
     }
 
-    &__icon:hover {
-        fill: var(--accent-color-light);
-    }
-
     &__info {
-        flex-basis: 50%;
         display: flex;
         flex-direction: column;
         justify-content: start;
+        flex-basis: 50%;
         gap: 8px;
 
         @media screen and (min-width: $bp-tablet) {

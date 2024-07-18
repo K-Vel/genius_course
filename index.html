@@ -123,7 +123,7 @@
             <span class="text-accent-light">Сучасна</span> пекарня
           </h1>
           <button
-            class="callback-button modern-bakery_button modal-btn-open"
+            class="callback-button callback-button_modern-bakery modal-btn-open"
             type="button"
           >
             Замовити дзвінок
@@ -144,7 +144,7 @@
       <!-- New traditional format section -->
       <section class="traditions" id="traditions-section">
         <div class="container">
-          <div class="traditions__container">
+          <div class="traditions__inner">
             <div class="traditions__content">
               <h2 class="traditions__title">Новий формат традицій</h2>
               <p class="traditions__text">
@@ -154,7 +154,7 @@
                 — це пекарня, яка взяла все найкраще, і зберегла смак
                 традиційної випічки та натуральність інгредієнтів.
               </p>
-              <p class="traditions__text traditions__text_limited">
+              <p class="traditions__text text_limited">
                 Ми працюємо як найвідоміші мережі —
                 <span class="text-accent-light text-bold-600"
                   >5 хвилин і замовлення готове.</span
@@ -232,7 +232,7 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div class="formats__swiper swiper-container">
+            <div class="swiper formats__swiper">
               <ul class="swiper-wrapper">
                 <!-- Walrus option -->
                 <li class="swiper-slide">
@@ -282,7 +282,7 @@
                 <!-- Walrus option copy -->
                 <li class="swiper-slide">
                   <article class="format format-walrus">
-                    <h4 lang="en" class="format__title">Walrus</h4>
+                    <h4 lang="en" class="format__title">Delicia</h4>
                     <div class="format__description">
                       <p>Площа: до 120 м2</p>
                       <p>Меню: розширене меню</p>
@@ -297,7 +297,7 @@
                 <!-- Horseshoe option copy-->
                 <li class="swiper-slide">
                   <article class="format format-horseshoe">
-                    <h4 lang="en" class="format__title">Horseshoe</h4>
+                    <h4 lang="en" class="format__title">Gustus</h4>
                     <div class="format__description">
                       <p>Площа: до 25 м2</p>
                       <p>Меню: найпопулярніші позиції меню</p>
@@ -312,7 +312,7 @@
                 <!-- Handlebar option copy-->
                 <li class="swiper-slide">
                   <article class="format format-handlebar">
-                    <h4 lang="en" class="format__title">Handlebar</h4>
+                    <h4 lang="en" class="format__title">Luxuria</h4>
                     <div class="format__description">
                       <p>Площа: до 15 м2</p>
                       <p>Меню: найпопулярніші позиції меню</p>
@@ -334,7 +334,7 @@
             </button>
           </div>
           <!-- Decoration ellipses-icons -->
-          <div class="pagination pagination_margin-24">
+          <div class="pagination margin-top-24">
             <span class="pagination__button"></span>
             <span class="pagination__button"></span>
             <span class="pagination__button"></span>
@@ -345,10 +345,10 @@
       <!-- Join the bakery network section -->
       <section class="contacts" id="contacts-section">
         <div class="container">
-          <div class="contacts__container">
+          <div class="contacts__inner">
             <div>
               <h2 class="contacts__title">Приєднуйся до мережі пекарень</h2>
-              <p class="contacts__content text-accent-dark">
+              <p class="contacts__text">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
               <!-- Form -->
@@ -392,7 +392,7 @@
                   />
                 </div>
                 <button
-                  class="callback-button callback-button_form-style callback-button_margin-16"
+                  class="callback-button callback-button_form margin-bottom-16"
                   type="submit"
                 >
                   Замовити дзвінок
@@ -418,7 +418,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__container">
+        <div class="footer__inner">
           <nav class="navigation navigation_footer">
             <!-- Logo -->
             <div class="navigation__logo_footer">
@@ -473,7 +473,7 @@
               </li>
               <li>
                 <!-- Facebook icon -->
-                <a class="address__icon_margin-22" href="#">
+                <a class="margin-right-22" href="#">
                   <svg class="address__icon" width="32px" height="32px">
                     <use href="./img/icons.svg#icon-facebook"></use>
                   </svg>
@@ -508,11 +508,11 @@
           </svg>
         </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
-        <p class="modal__content">
+        <p class="modal__text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
         <form class="form form_backdrop" name="modal-form">
-          <div class="form__field form__field_margin-backdrop">
+          <div class="form__field form__field_backdrop">
             <label class="visually-hidden" for="modal-name">Ім'я</label>
             <input
               class="form__input"
@@ -522,7 +522,7 @@
               required
             />
           </div>
-          <div class="form__field form__field form__field_margin-backdrop">
+          <div class="form__field form__field_backdrop">
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input
               class="form__input"
@@ -534,7 +534,7 @@
               required
             />
           </div>
-          <div class="form__field form__field_margin-backdrop">
+          <div class="form__field form__field_backdrop">
             <label class="visually-hidden" for="modal-email"
               >Електронна пошта</label
             >
@@ -548,10 +548,7 @@
               required
             />
           </div>
-          <button
-            class="callback-button callback-button_form-style"
-            type="submit"
-          >
+          <button class="callback-button callback-button_form" type="submit">
             Замовити дзвінок
           </button>
           <p class="form__terms">

@@ -6,41 +6,7 @@
 
 .form {
 
-    /* Modifier */
-    &_backdrop {
-        margin-top: 24px;
-
-        @media screen and (min-width: $bp-desktop) {
-            margin-top: 72px;
-        }
-    }
-
-    /* Modifier */
-    &_contacts {
-        margin-top: 24px;
-
-        @media screen and (min-width: $bp-tablet) {
-            margin-top: 42px;
-        }
-    }
-
-    &__field {
-
-        /* Modifier */
-        &_margin-backdrop {
-            margin-bottom: 24px;
-
-            @media screen and (min-width: $bp-desktop) {
-                margin-bottom: 32px;
-            }
-        }
-
-        /* Modifier */
-        &_margin-24 {
-            margin-bottom: 24px;
-        }
-    }
-
+    // General
     &__input {
         padding: 16px 42px;
         width: 100%;
@@ -78,11 +44,6 @@
 
         @media screen and (min-width: $bp-tablet) {
             display: block;
-            margin: 24px auto;
-        }
-
-        @media screen and (min-width: $bp-desktop) {
-            margin-top: 42px;
         }
     }
 
@@ -90,4 +51,38 @@
         color: var(--primary-dark);
         text-underline-offset: 2px;
     }
+
+    /* Modificators */
+    // Backdrop
+    &_backdrop {
+        margin-top: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-top: 72px;
+        }
+    }
+
+    &__field_backdrop {
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 32px;
+        }
+    }
+
+    // Contacts
+    &_contacts {
+        margin-top: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-top: 42px;
+        }
+    }
+
+    &__field_margin-24 {
+        margin-bottom: 24px;
+    }
+
+
+
 }

@@ -11,7 +11,7 @@
         padding: 48px 0 96px;
     }
 
-    &__container {
+    &__inner {
         display: flex;
         flex-direction: column;
 
@@ -22,16 +22,17 @@
     }
 
     &__title {
-        text-align: center;
         margin-bottom: 8px;
+        text-align: center;
 
         @media screen and (min-width: $bp-desktop) {
-            text-align: start;
             margin-bottom: 16px;
+            text-align: start;
         }
     }
 
-    &__content {
+    &__text {
+        color: var(--accent-color-dark);
         text-align: center;
 
         @media screen and (min-width: $bp-desktop) {
@@ -45,18 +46,17 @@
         height: 176px;
         border: 0;
 
-
         @media screen and (min-width: $bp-tablet) {
-            margin: auto;
-            border-radius: 16px;
             width: 420px;
             height: 500px;
+            margin: auto;
+            border-radius: 16px;
         }
 
         @media screen and (min-width: $bp-desktop) {
-            border-radius: 16px;
             width: 603px;
             height: 595px;
+            border-radius: 16px;
         }
     }
 }

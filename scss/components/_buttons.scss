@@ -36,9 +36,24 @@
             display: block;
         }
     }
+
+    // Modern bakery
+    &_modern-bakery {
+        margin: 0px auto;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+    // Form
+    /* Modificator */
+    &_form {
+        margin: 0 auto 24px;
+    }
 }
 
-// Burger button
+// Header Burger button
 .header__burger {
     width: 24px;
     height: 24px;
@@ -47,30 +62,10 @@
 
     fill: var(--primary-light);
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
         display: none;
     }
 }
-
-.modern-bakery_button {
-    margin: 0px auto;
-
-    @media screen and (min-width: $bp-desktop) {
-        display: none;
-    }
-}
-
-/* Modificator */
-.callback-button_form-style {
-    margin: 0 auto 24px;
-}
-
-/* Modificator */
-.callback-button_margin-16 {
-    margin-bottom: 16px;
-}
-
-
 
 /* Carousel button */
 .carousel-button {
@@ -100,16 +95,12 @@
     }
 }
 
-/* Ellipses button */
+/* Pagination buttons */
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-
-    &_margin-24 {
-        margin-top: 24px;
-    }
 
     &__button {
         flex-shrink: 0;
@@ -125,7 +116,6 @@
         }
     }
 }
-
 
 
 /* JS */
