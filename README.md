@@ -8,7 +8,7 @@ Technologies Used
 Installation
 Usage
 Contributing
-
+License
 Project Overview
 This project aims to create a visually appealing and user-friendly single-page website for a bakery. The design is modern, clean, and responsive, ensuring an optimal viewing experience across various devices.
 
@@ -17,29 +17,33 @@ Responsive Design: Ensures the website looks great on desktops, tablets, and mob
 Modern Layout: Utilizes a contemporary design to attract and engage visitors.
 Easy Navigation: Simple and intuitive navigation for a seamless user experience.
 Product Showcase: Highlighting the bakery's products with attractive images and descriptions.
-
 Technologies Used
 HTML5: For structuring the website content.
 SCSS (Sassy CSS): For styling the website with enhanced CSS capabilities.
-
 Installation
 To get a local copy up and running, follow these simple steps:
 
 Clone the repository:
+bash
+Копировать код
 git clone https://github.com/K-Vel/genius_course.git
-
 Navigate to the project directory:
-cd bakery-website
-
+bash
+Копировать код
+cd genius_course
 Usage
 Open the index.html file in your preferred web browser to view the website.
 
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-If you have suggestions for improving this project, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have suggestions for improving this project, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
 Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
